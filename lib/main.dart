@@ -288,7 +288,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final String shopName = "SivaSakthi Stores";
-  final String ownerName = "Mr. Madhu Kumar";
+  final String ownerName = "Mr. N. Madhu Kumar";
   final String phoneNumber = "+91 9080660749";
   final String serviceDescription = "Specialized in Diwali Chits with various categories to choose from.";
   final String address = "SivaSakthi Stores, Konganapalli Road, Opposite to Aishwarya Hotel, Veppanapalli 635 121";

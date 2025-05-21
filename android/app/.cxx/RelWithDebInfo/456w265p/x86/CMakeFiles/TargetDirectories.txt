@@ -1,0 +1,2 @@
+E:/Projects/Nanjundeshwara_store/Nanjundeshwara/dev/android/app/.cxx/RelWithDebInfo/456w265p/x86/CMakeFiles/edit_cache.dir
+E:/Projects/Nanjundeshwara_store/Nanjundeshwara/dev/android/app/.cxx/RelWithDebInfo/456w265p/x86/CMakeFiles/rebuild_cache.dir

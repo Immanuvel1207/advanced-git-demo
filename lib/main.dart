@@ -1620,18 +1620,8 @@ class _TrashScreenState extends State<TrashScreen> {
           _deletedUsers = List<Map<String, dynamic>>.from(data['users']);
           _isLoading = false;
         });
-      } else {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Failed to fetch deleted users: ${response.body}'),
-            backgroundColor: AppTheme.danger,
-          ),
-        );
-        setState(() {
-          _isLoading = false;
-        });
-      }
-    } catch (e) {
+      } 
+          } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text('An error occurred: $e'),
@@ -1658,14 +1648,7 @@ class _TrashScreenState extends State<TrashScreen> {
           ),
         );
         _fetchDeletedUsers(); // Refresh the list
-      } else {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Failed to restore user: ${response.body}'),
-            backgroundColor: AppTheme.danger,
-          ),
-        );
-      }
+      } 
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(

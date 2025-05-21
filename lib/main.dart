@@ -166,6 +166,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
     checkLoginStatus();
   }
 
+
   @override
   void dispose() {
     _controller.dispose();
@@ -288,7 +289,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final String shopName = "SivaSakthi Stores";
-  final String ownerName = "Mr. Madhu Kumar";
+  final String ownerName = "Mr. N. Madhu Kumar";
   final String phoneNumber = "+91 9080660749";
   final String serviceDescription = "Specialized in Diwali Chits with various categories to choose from.";
   final String address = "SivaSakthi Stores, Konganapalli Road, Opposite to Aishwarya Hotel, Veppanapalli 635 121";
@@ -427,7 +428,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   );
                 },
                 icon: Icon(Icons.login, size: 18),
-                label: Text("Login"),
+                label: Text("Sign In"),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.white,
                   foregroundColor: AppTheme.primaryColor,
@@ -1172,7 +1173,7 @@ class _LoginScreenState extends State<LoginScreen> {
             _showErrorSnackBar('Invalid credentials');
           }
         } else {
-          _showErrorSnackBar('Login failed. Please try again.');
+          _showErrorSnackBar('Cannot connect to the server. Please try again.');
         }
       } catch (e) {
         setState(() {

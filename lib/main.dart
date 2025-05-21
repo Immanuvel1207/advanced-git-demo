@@ -166,6 +166,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
     checkLoginStatus();
   }
 
+
   @override
   void dispose() {
     _controller.dispose();
@@ -427,7 +428,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   );
                 },
                 icon: Icon(Icons.login, size: 18),
-                label: Text("Login"),
+                label: Text("Sign In"),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.white,
                   foregroundColor: AppTheme.primaryColor,
@@ -1172,7 +1173,7 @@ class _LoginScreenState extends State<LoginScreen> {
             _showErrorSnackBar('Invalid credentials');
           }
         } else {
-          _showErrorSnackBar('Login failed. Please try again.');
+          _showErrorSnackBar('Cannot connect to the server. Please try again.');
         }
       } catch (e) {
         setState(() {
